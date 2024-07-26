@@ -1,0 +1,408 @@
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    position: static;
+}
+
+#ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+#ul li a {
+    margin-right: 90px;
+    font-size: larger;
+    text-decoration: none;
+    margin-top: 10px;
+    color: antiquewhite;
+}
+
+#ul li a:hover {
+    font-size: x-large;
+}
+
+#h1 {
+    display: inline;
+    margin-right: 400px;
+    color: antiquewhite;
+}
+
+#MyStory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: lightslategray;
+    width: 100%;
+    height: 650px;
+    background-image: url(images/intro.jpg);
+    background-size: cover;
+}
+
+#intro {
+    width: 50%;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
+#intro_image {
+    display: inline;
+    width: 40%;
+    margin: 0;
+    background-image: url("images/intro_image.jpeg");
+    background-size: cover;
+    justify-self: flex-end;
+    z-index: 2;
+}
+
+#intro p {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 60px;
+    color: ivory;
+}
+
+#intro #h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: ivory;
+}
+
+.MySkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 850px;
+    background-image: url(images/Myskills.jpg);
+    background-size: cover;
+}
+
+#h3 {
+    color: black;
+    height: 60px;
+    text-align: center;
+    font-size: 3em;
+    border: 5px solid black;
+}
+
+#left-one,
+#middle-one,
+#right-one,
+#left-two,
+#middle-two {
+    margin-top: 50px;
+    border: 4px solid #010100;
+    border-radius: 5%;
+    flex: 0 0 30%;
+    width: 450px;
+    height: 350px;
+    position: relative;
+}
+
+#left-one:hover,
+#middle-one:hover,
+#right-one:hover,
+#left-two:hover,
+#middle-two:hover {
+    font-size: large;
+    border: 8px solid #010100;
+}
+
+#left-one h2,
+#middle-one h2,
+#right-one h2,
+#left-two h2,
+#middle-two h2 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    color: ivory;
+    margin: 10px;
+}
+
+#left-one ul li,
+#middle-one ul li,
+#right-one ul li,
+#left-two ul li,
+#middle-two ul li {
+    font-size: 5em;
+    color: azure;
+    list-style: none;
+    text-align: start;
+    display: inline-block;
+    margin: 20px;
+}
+
+#middle-one ul li,
+#right-one ul li{
+    font-size: 6.0em;
+}
+
+.Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(143, 124, 124);
+}
+
+#project1,
+#project2,
+#project3 {
+    width: 450px;
+    height: 313px;
+    align-self: center;
+}
+
+#project1 ul,
+#project2 ul,
+#project3 ul {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#project1 ul li,
+#project2 ul li,
+#project3 ul li {
+    display: inline;
+    color: ivory;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+#project1_image,
+#project2_image,
+#project3_image {
+    width: 100%;
+    height: 205px;
+    margin-top: 10px;
+    background-size: cover;
+}
+
+#project1_image {
+    background-image: url("images/fakenews.jpg");
+}
+
+#project2_image {
+    background-image: url("images/project2.jpeg");
+}
+
+#project3_image {
+    background-color: white;
+    background-image: url("images/project3.png");
+    background-size: contain;
+    width: 90%;
+
+}
+
+#h5 {
+    color: ivory;
+    font-size: 1.25em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#project3 p {
+    color: ivory;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.Highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 650px;
+    background-image: url("images/milestones.jpg");
+    background-size: cover;
+}
+
+#footer {
+    background-color: black;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer #copyrights {
+    display: inline;
+    margin-right: 200px;
+}
+
+#footer #copyrights p {
+    width: 50%;
+    height: 50px;
+    font-size: large;
+    color: antiquewhite;
+    display: inline;
+    margin: 200px;
+}
+
+#footer #contact {
+    display: inline;
+}
+
+#footer #contact a {
+    width: 40%;
+    height: 50px;
+    color: antiquewhite;
+    margin-right: 70px;
+    font-size: x-large;
+}
+
+/* Media Queries */
+
+/* Adjust styles for tablets and larger phones */
+@media (max-width: 1024px) {
+    #h1 {
+        margin-right: 200px;
+    }
+
+    #intro {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #intro_image {
+        width: 100%;
+    }
+
+    #intro p {
+        font-size: large;
+        margin-top: 30px;
+    }
+
+    #intro #h2 {
+        font-size: 50px;
+        padding-top: 50px;
+    }
+
+    .MySkills {
+        height: auto;
+    }
+
+    #left-one,
+    #middle-one,
+    #right-one,
+    #left-two,
+    #middle-two {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ul li a {
+        margin-right: 0;
+        font-size: medium;
+    }
+
+    #h1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #MyStory {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #intro {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #intro_image {
+        width: 100%;
+    }
+
+    .MySkills {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left-one,
+    #middle-one,
+    #right-one,
+    #left-two,
+    #middle-two {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .Projects {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #project1,
+    #project2,
+    #project3 {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .Highlights {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Adjust styles for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    #navbar {
+        height: auto;
+    }
+
+    #ul li a {
+        font-size: small;
+        margin-top: 5px;
+    }
+
+    #intro p {
+        font-size: medium;
+        margin-top: 20px;
+    }
+
+    #intro #h2 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    #left-one ul li,
+    #middle-one ul li,
+    #right-one ul li,
+    #left-two ul li,
+    #middle-two ul li {
+        font-size: 2em;
+    }
+}

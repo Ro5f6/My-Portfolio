@@ -84,7 +84,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: 850px;
-    background-image: URL("images/Myskills.jpg");
+    background-image: Url("images/Myskills.jpg");
     background-size: cover;
 }
 

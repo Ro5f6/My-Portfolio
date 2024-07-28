@@ -43,7 +43,7 @@
     background-color: lightslategray;
     width: 100%;
     height: 650px;
-    background-image: url("images/intro.jpg");
+    background-image: url(images/intro.jpg);
     background-size: cover;
 }
 
@@ -84,7 +84,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: 850px;
-    background-image: url("images/MySkills.jpg");
+    background-image: url(images/Myskills.jpg);
     background-size: cover;
 }
 
@@ -315,38 +315,44 @@
 }
 
 /* Adjust styles for smaller screens */
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #navbar {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     #ul li a {
-        margin-right: 0;
+        margin-right: 20px;
         font-size: medium;
     }
 
     #h1 {
-        margin-right: 0;
+        margin-right: 40px;
         margin-bottom: 10px;
     }
 
     #MyStory {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
     }
 
     #intro {
-        width: 100%;
+        width: 50%;
         margin-left: 0;
     }
 
+    #intro p {
+        text-align:center;
+        font-size:large;
+    }
+
     #intro_image {
-        width: 100%;
+        width: 40%;
+        border-radius: 75%;
     }
 
     .MySkills {
-        flex-direction: column;
+        width: 100%;
         height: auto;
     }
 
@@ -355,8 +361,21 @@
     #right-one,
     #left-two,
     #middle-two {
-        width: 90%;
         margin: 10px auto;
+    }
+
+    #middle-one ul li,
+    #left-two ul li,
+    #middle-two ul li {
+        font-size: 3.5em;
+    }
+
+    #left-one ul li {
+        font-size: 2.5em;
+    }
+
+    #right-one ul li {
+        font-size: 5em;
     }
 
     .Projects {
@@ -371,10 +390,41 @@
         margin: 10px auto;
     }
 
-    .Highlights {
-        flex-direction: column;
-        height: auto;
+    #project1_image,
+    #project2_image {
+        width: 622px;
     }
+
+    #footer {
+        width: 100%;
+        height: 30px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    #footer #copyrights{
+        width:50%;
+        display: inline;
+        margin:0;
+    }
+
+    #footer #copyrights p{
+        font-size: medium;
+        margin:0;
+        margin-right: 40px;
+    }
+
+    #footer #contact {
+        width: 40%;
+        display: inline;
+    }
+
+    #footer #contact a{
+        font-size: medium;
+        margin-right: 25px;
+    }
+
 }
 
 /* Adjust styles for very small screens (mobile phones) */
@@ -383,19 +433,55 @@
         height: auto;
     }
 
-    #ul li a {
+    #h1 {
         font-size: small;
-        margin-top: 5px;
+        margin-right:20px;
     }
 
+   
+    
+    #ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+
+    #ul li a {
+        font-size: x-small;
+        margin-top: 5px;
+        margin-right:20px;
+    }
+
+    #MyStory {
+       width: 100%;
+       height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    #intro {
+        width: 50%;
+        display: inline;
+    }
+
+
     #intro p {
-        font-size: medium;
+        font-size: small;
         margin-top: 20px;
     }
 
     #intro #h2 {
-        font-size: 30px;
+        font-size: 25px;
         padding-top: 30px;
+    }
+    #intro_image {
+        width: 40%;
+        display: inline;
+    }
+
+    #intro_image a {
+        
     }
 
     #left-one ul li,
@@ -404,5 +490,57 @@
     #left-two ul li,
     #middle-two ul li {
         font-size: 2em;
+    }
+
+    .Projects {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #project1,
+    #project2,
+    #project3 {
+        width: 90%;
+        margin: 10px auto;
+        height: fit-content;
+    }
+
+    #project1_image,
+    #project2_image,
+    #project3_image {
+        margin-top: 20px;
+    }
+
+    #project3_image {
+        padding-right: 50px;
+    }
+
+    #footer {
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+
+    #footer #copyrights{
+        width:40%;
+        display: inline;
+        margin:0;
+    }
+
+    #footer #copyrights p{
+        font-size: x-small;
+        margin: 0;
+        margin-right: 2px;
+    }
+
+    #footer #contact {
+        width: 40%;
+        display: inline;
+    }
+
+    #footer #contact a{
+        font-size: x-small;
+        margin-right: 10px;
     }
 }
